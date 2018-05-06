@@ -1,0 +1,48 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../polymer/lib/elements/dom-repeat.html">
+
+<dom-module id="polytut-1">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>New Ejuice</h2>
+    <dom-repeat 
+      items="{{Ejuice}}"
+      as="juice"
+      >
+      <template>
+        <div>
+          <input type="checkbox">
+          <input type="text" value="{{juice}}">
+        </div>
+      </template>
+    </dom-repeat>
+  </template>
+
+  <script>
+    /**
+     * `polytut-1`
+     * tutorial with just polymer
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class Polytut1 extends Polymer.Element {
+      static get is() { return 'polytut-1'; }
+      static get properties() {
+        return {
+          Ejuice: {
+            type: Array,
+            value: () => [1, 2, 3, 54]
+          }
+        };
+      }
+    }
+
+    window.customElements.define(Polytut1.is, Polytut1);
+  </script>
+</dom-module>
