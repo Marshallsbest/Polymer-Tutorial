@@ -1,2 +1,4 @@
-{ "scm.alwaysShowProviders": true,
+{   "scm.alwaysShowProviders": true,
+    "github-pr.accessToken": "c6f0b7f86d052c519046da82f795b4dc78ce3117",
+    "git.ignoreLimitWarning": true,
 }
