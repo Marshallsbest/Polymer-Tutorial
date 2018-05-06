@@ -1,5 +1,0 @@
-{
-    "openInGitHub.gitHubDomain":"https://github.com/Marshallsbest",
-    "openInGitHub.requireSelectionForLines":false   // If enabled, the copied or opened URL won't include line number(s) unless there's an active selection
-    "openInGitHub.providerType": "github" //github, gitlab, bitbucket, ...
-  }
